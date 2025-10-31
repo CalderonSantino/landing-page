@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* Paleta de colores EVA 01 */
+@theme {
+  --eva-purple: #4a148c;
+  --eva-purple-light: #6a1b9a;
+  --eva-purple-dark: #2c0e4f;
+  --eva-green: #00ff41;
+  --eva-green-dark: #00cc34;
+  --eva-bg: #0a0a0f;
+  --eva-bg-secondary: #16161d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--eva-bg);
+  color: #e0e0e0;
+  font-family: "Fira Code", "JetBrains Mono", monospace;
+  overflow-x: hidden;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px var(--eva-green), 0 0 10px var(--eva-green);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--eva-green), 0 0 30px var(--eva-green);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--eva-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--eva-purple);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--eva-purple-light);
+}

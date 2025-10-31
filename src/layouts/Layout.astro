@@ -1,11 +1,25 @@
+---                            
+import '../styles/global.css'
+---  
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<!-- SEO Meta Tags -->
+		<meta name="description" content="Desarrollo de software profesional, ERPs, CRMs, páginas web, y aplicaciones móviles. Soluciones tecnológicas a medida." />
+		<meta name="keywords" content="desarrollo software, ERP, CRM, páginas web, apps móviles, iOS, Android, Next.js, Astro, PostgreSQL, AWS" />
+		
+		<!-- Google Fonts - Fuentes de programación -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		
+		<title>DevStack Solutions | Desarrollo de Software Profesional</title>
 	</head>
 	<body>
 		<slot />
@@ -17,6 +31,6 @@
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100%;
 	}
 </style>
