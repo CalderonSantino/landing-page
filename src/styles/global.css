@@ -11,12 +11,6 @@
   --eva-bg-secondary: #16161d;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: var(--eva-bg);
   color: #e0e0e0;
