@@ -1,5 +1,10 @@
 ---                            
 import '../styles/global.css'
+const {
+	title = 'DevStack Studio | Desarrollo Web Freelance',
+	description = 'DevStack Studio es el estudio freelance de Santino, especializado en landing pages, sitios web, aplicaciones y sistemas a medida con foco en rendimiento, claridad y conversion.',
+} = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, 'https://devstack.studio').toString();
 ---  
 
 <!doctype html>
@@ -8,18 +13,28 @@ import '../styles/global.css'
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={canonicalUrl} />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="theme-color" content="#0A0A0F" />
 		
 		<!-- SEO Meta Tags -->
-		<meta name="description" content="Desarrollo de software profesional, ERPs, CRMs, páginas web, y aplicaciones móviles. Soluciones tecnológicas a medida." />
-		<meta name="keywords" content="desarrollo software, ERP, CRM, páginas web, apps móviles, iOS, Android, Next.js, Astro, PostgreSQL, AWS" />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="desarrollador freelance, desarrollo web, landing pages, sitios web, aplicaciones web, ERP, CRM, Astro, TypeScript, Supabase, Railway, PostgreSQL" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:site_name" content="DevStack Studio" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
 		
 		<!-- Google Fonts - Fuentes de programación -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 		
-		<title>DevStack Solutions | Desarrollo de Software Profesional</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />

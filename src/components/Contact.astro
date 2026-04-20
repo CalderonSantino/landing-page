@@ -1,5 +1,7 @@
 ---
-// Contact Section - Sección de contacto
+// Contact Section - Contacto
+const whatsappHref = "https://wa.me/5493492373900?text=Hola%20Santino%2C%20quiero%20consultarte%20por%20un%20proyecto%20para%20DevStack%20Studio.";
+const scheduleHref = "mailto:hola@devstack.studio?subject=Agendar%20llamada&body=Hola%20Santino%2C%20quiero%20coordinar%20una%20llamada%20para%20hablar%20sobre%20un%20proyecto.";
 ---
 
 <section id="contact" class="py-24 px-4 bg-linear-to-b from-[#16161D] to-[#0A0A0F] relative overflow-hidden">
@@ -16,7 +18,7 @@
         Comencemos tu Proyecto
       </h2>
       <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-        Estamos listos para transformar tu idea en realidad
+        Contame que queres construir y te respondo personalmente desde DevStack Studio.
       </p>
     </div>
 
@@ -26,7 +28,7 @@
       <div class="space-y-8">
         <div class="animate-fade-in-up">
           <h3 class="text-2xl font-bold text-white mb-6">
-            ¿Por qué elegirnos?
+            Como trabajo cada proyecto
           </h3>
           
           <div class="space-y-6">
@@ -38,8 +40,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-white font-semibold mb-1">Desarrollo Ágil</h4>
-                <p class="text-gray-400 text-sm">Entregas rápidas e iterativas</p>
+                <h4 class="text-white font-semibold mb-1">Desarrollo agil</h4>
+                <p class="text-gray-400 text-sm">Entregas claras, iterativas y con feedback frecuente</p>
               </div>
             </div>
 
@@ -51,8 +53,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-white font-semibold mb-1">Código de Calidad</h4>
-                <p class="text-gray-400 text-sm">Best practices y código limpio</p>
+                <h4 class="text-white font-semibold mb-1">Codigo de calidad</h4>
+                <p class="text-gray-400 text-sm">Buenas practicas, estructura mantenible y foco en rendimiento</p>
               </div>
             </div>
 
@@ -64,8 +66,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="text-white font-semibold mb-1">Soporte Continuo</h4>
-                <p class="text-gray-400 text-sm">Siempre a tu disposición</p>
+                <h4 class="text-white font-semibold mb-1">Acompanamiento</h4>
+                <p class="text-gray-400 text-sm">Soporte posterior al lanzamiento y mejoras por etapas</p>
               </div>
             </div>
 
@@ -78,7 +80,7 @@
               </div>
               <div>
                 <h4 class="text-white font-semibold mb-1">Precios Competitivos</h4>
-                <p class="text-gray-400 text-sm">Máximo valor por tu inversión</p>
+                <p class="text-gray-400 text-sm">Alcance claro y maximo valor por tu inversion</p>
               </div>
             </div>
           </div>
@@ -95,43 +97,28 @@
               </svg>
             </div>
             <h3 class="text-2xl font-bold text-white mb-2">
-              Contáctanos
+              Contactame
             </h3>
             <p class="text-gray-400">
-              Obtén una consulta gratuita
+              Te leo y coordinamos una consulta inicial
             </p>
           </div>
 
           <!-- Contact Methods -->
           <div class="space-y-4">
-            <a href="mailto:contacto@devstack.com" class="block w-full px-6 py-4 bg-linear-to-r from-[#4A148C] to-[#6A1B9A] text-white font-semibold rounded-lg text-center transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00FF41]/50">
-              📧 Enviar Email
+            <a href="mailto:hola@devstack.studio" class="block w-full px-6 py-4 bg-linear-to-r from-[#4A148C] to-[#6A1B9A] text-white font-semibold rounded-lg text-center transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#00FF41]/50">
+              hola@devstack.studio
             </a>
             
-            <a href="#" class="block w-full px-6 py-4 border-2 border-[#00FF41] text-[#00FF41] font-semibold rounded-lg text-center transition-all duration-300 hover:bg-[#00FF41] hover:text-black hover:scale-105">
-              💬 WhatsApp
+            <a href={whatsappHref} target="_blank" rel="noopener noreferrer" class="block w-full px-6 py-4 border-2 border-[#00FF41] text-[#00FF41] font-semibold rounded-lg text-center transition-all duration-300 hover:bg-[#00FF41] hover:text-black hover:scale-105">
+              WhatsApp
             </a>
             
-            <a href="#" class="block w-full px-6 py-4 border-2 border-[#6A1B9A] text-[#6A1B9A] font-semibold rounded-lg text-center transition-all duration-300 hover:bg-[#6A1B9A] hover:text-white hover:scale-105">
-              📞 Agendar Llamada
+            <a href={scheduleHref} class="block w-full px-6 py-4 border-2 border-[#6A1B9A] text-[#6A1B9A] font-semibold rounded-lg text-center transition-all duration-300 hover:bg-[#6A1B9A] hover:text-white hover:scale-105">
+              Agendar Llamada
             </a>
           </div>
 
-          <!-- Social Links -->
-          <div class="mt-8 pt-6 border-t border-[#4A148C]">
-            <p class="text-gray-400 text-sm text-center mb-4">Síguenos en:</p>
-            <div class="flex justify-center gap-4">
-              <a href="#" class="w-10 h-10 bg-[#4A148C] rounded-lg flex items-center justify-center hover:bg-[#00FF41] transition-colors duration-300 group">
-                <span class="text-[#00FF41] group-hover:text-black font-bold">in</span>
-              </a>
-              <a href="#" class="w-10 h-10 bg-[#4A148C] rounded-lg flex items-center justify-center hover:bg-[#00FF41] transition-colors duration-300 group">
-                <span class="text-[#00FF41] group-hover:text-black font-bold">git</span>
-              </a>
-              <a href="#" class="w-10 h-10 bg-[#4A148C] rounded-lg flex items-center justify-center hover:bg-[#00FF41] transition-colors duration-300 group">
-                <span class="text-[#00FF41] group-hover:text-black font-bold">tw</span>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -143,10 +130,10 @@
   <div class="max-w-6xl mx-auto text-center">
     <p class="text-gray-400 mb-2">
       <span class="text-[#00FF41] font-mono">&lt;/&gt;</span> 
-      Hecho con 💜 por DevStack Solutions
+      DevStack Studio | devstack.studio
     </p>
     <p class="text-gray-500 text-sm">
-      © 2025 DevStack Solutions. Todos los derechos reservados.
+      (c) 2025 DevStack Studio. Todos los derechos reservados.
     </p>
   </div>
 </footer>
