@@ -71,10 +71,10 @@ const technologies = [
     </div>
 
     <!-- Technologies Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
+    <div class="flex flex-wrap justify-center gap-6 mb-16">
       {technologies.map((tech, index) => (
         <div 
-          class="group relative bg-[#16161D] border border-[#4A148C] rounded-lg p-6 flex flex-col items-center justify-center transition-all duration-300 hover:border-[#00FF41] hover:transform hover:scale-110 hover:shadow-xl cursor-pointer min-h-[140px]"
+          class="group relative bg-[#16161D] border border-[#4A148C] rounded-lg p-6 flex flex-col items-center justify-center transition-all duration-300 hover:border-[#00FF41] hover:transform hover:scale-110 hover:shadow-xl cursor-pointer min-h-[140px] w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]"
           style={`animation: slideInRight ${0.5 + index * 0.1}s ease-out backwards;`}
         >
           <!-- Tech Icon -->
