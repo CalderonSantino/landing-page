@@ -1,0 +1,21 @@
+
+> landing-page@0.0.1 dev
+> astro dev --host 127.0.0.1
+
+[2m12:38:47[22m [34m[types][39m Generated [2m2ms[22m
+[2m12:38:47[22m [34m[content][39m Syncing content
+[2m12:38:47[22m [34m[content][39m Astro config changed
+[2m12:38:47[22m [34m[content][39m Clearing content store
+[2m12:38:47[22m [34m[content][39m Synced content
+
+[42m[1m astro [22m[49m [32mv5.15.3[39m [2mready in[22m 1504 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://127.0.0.1:4321/[39m
+
+[2m12:38:47[22m [32mwatching for file changes...[39m
+
+[43m[30m update [39m[49m [33m▶ New version of Astro available: 7.0.3[39m
+  Run [36mnpx @astrojs/upgrade[39m to update
+
+[2m12:38:50[22m [34m[200][39m / [2m236ms[22m
+[2m12:39:04[22m [34m[200][39m / [2m10ms[22m
