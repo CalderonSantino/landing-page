@@ -1,0 +1,148 @@
+---
+// Tech Stack Section - Tecnologias
+const technologies = [
+  { 
+    name: "HTML5", 
+    color: "#E34F26",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>`
+  },
+  { 
+    name: "CSS3", 
+    color: "#1572B6",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>`
+  },
+  { 
+    name: "JavaScript", 
+    color: "#F7DF1E",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z"/></svg>`
+  },
+  { 
+    name: "TypeScript", 
+    color: "#3178C6",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>`
+  },
+  { 
+    name: "Astro", 
+    color: "#FF5D01",
+    icon: `<svg viewBox="0 0 128 128" fill="none"><path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" fill="currentColor"/></svg>`
+  },
+  { 
+    name: "Tailwind", 
+    color: "#06B6D4",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>`
+  },
+  { 
+    name: "Node.js", 
+    color: "#339933",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg>`
+  },
+  { 
+    name: "MongoDB", 
+    color: "#47A248",
+    icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg>`
+  },
+  { 
+    name: "PostgreSQL", 
+    color: "#4169E1",
+    icon: `<svg viewBox="0 0 25.6 25.6" fill="none"><g fill="none" stroke="currentColor" stroke-width=".716" stroke-linecap="round" stroke-linejoin="round"><path d="M23.535 15.6c-2.89.596-3.1-.383-3.1-.383 3.053-4.53 4.33-10.28 3.228-11.687-3.004-3.84-8.205-2.023-8.292-1.976l-.028.005a10.31 10.31 0 0 0-1.929-.201c-1.308-.02-2.3.343-3.054.914 0 0-9.278-3.822-8.846 4.807.092 1.836 2.63 13.9 5.66 10.25C8.29 15.987 9.36 14.86 9.36 14.86c.53.353 1.167.533 1.834.468l.052-.044a2.02 2.02 0 0 0 .021.518c-.78.872-.55 1.025-2.11 1.346-1.578.325-.65.904-.046 1.056.734.184 2.432.444 3.58-1.162l-.046.183c.306.245.52 1.593.484 2.815s-.06 2.06.18 2.716.48 2.13 2.53 1.7c1.713-.367 2.6-1.32 2.725-2.906.088-1.128.286-.962.3-1.97l.16-.478c.183-1.53.03-2.023 1.085-1.793l.257.023c.777.035 1.794-.125 2.39-.402 1.285-.596 2.047-1.592.78-1.33z" fill="#336791" stroke="none"/><path d="M12.814 16.467c-.08 2.846.02 5.712.298 6.4s.875 2.05 2.926 1.612c1.713-.367 2.337-1.078 2.607-2.647l.633-5.017M10.356 2.2S1.072-1.596 1.504 7.033c.092 1.836 2.63 13.9 5.66 10.25C8.27 15.95 9.27 14.907 9.27 14.907m6.1-13.4c-.32.1 5.164-2.005 8.282 1.978 1.1 1.407-.175 7.157-3.228 11.687"/><path d="M20.425 15.17s.2.98 3.1.382c1.267-.262.504.734-.78 1.33-1.054.49-3.418.615-3.457-.06-.1-1.745 1.244-1.215 1.147-1.652-.088-.394-.69-.78-1.086-1.744-.347-.84-4.76-7.29 1.224-6.333.22-.045-1.56-5.7-7.16-5.782S7.99 8.196 7.99 8.196" stroke-linejoin="bevel"/><path d="M11.247 15.768c-.78.872-.55 1.025-2.11 1.346-1.578.325-.65.904-.046 1.056.734.184 2.432.444 3.58-1.163.35-.49-.002-1.27-.482-1.468-.232-.096-.542-.216-.94.23z"/><path d="M11.196 15.753c-.08-.513.168-1.122.433-1.836.398-1.07 1.316-2.14.582-5.537-.547-2.53-4.22-.527-4.22-.184s.166 1.74-.06 3.365c-.297 2.122 1.35 3.916 3.246 3.733"/></g><g fill="currentColor"><path d="M10.322 8.145c-.017.117.215.43.516.472s.558-.202.575-.32-.215-.246-.516-.288-.56.02-.575.136z"/><path d="M19.486 7.906c.016.117-.215.43-.516.472s-.56-.202-.575-.32.215-.246.516-.288.56.02.575.136z"/></g><path d="M20.562 7.095c.05.92-.198 1.545-.23 2.524-.046 1.422.678 3.05-.413 4.68" stroke="currentColor" stroke-width=".716" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+  }
+];
+---
+
+<section id="tech" class="py-24 px-4 bg-[#0A0A0F] relative overflow-hidden">
+  <!-- Background effect -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-[#4A148C] rounded-full filter blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-[#00FF41] rounded-full filter blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-[#6A1B9A] to-[#00FF41] bg-clip-text text-transparent">
+        Tech Stack
+      </h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        Trabajo con herramientas modernas, estables y pensadas para construir rapido sin resignar calidad.
+      </p>
+      <div class="mt-4 text-[#00FF41] font-mono">
+        <span class="animate-pulse">{'<'}</span>code<span class="animate-pulse">{'>'}</span>
+      </div>
+    </div>
+
+    <!-- Technologies Grid -->
+    <div class="flex flex-wrap justify-center gap-6 mb-16">
+      {technologies.map((tech, index) => (
+        <div 
+          class="group relative bg-[#16161D] border border-[#4A148C] rounded-lg p-6 flex flex-col items-center justify-center transition-all duration-300 hover:border-[#00FF41] hover:transform hover:scale-110 hover:shadow-xl cursor-pointer min-h-[140px] w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(20%-1.2rem)]"
+          style={`animation: slideInRight ${0.5 + index * 0.1}s ease-out backwards;`}
+        >
+          <!-- Tech Icon -->
+          <div 
+            class="w-12 h-12 mb-3 transition-all duration-300 group-hover:scale-110"
+            style={`color: ${tech.color};`}
+            set:html={tech.icon}
+          />
+          
+          <!-- Tech Name -->
+          <h3 class="text-base md:text-lg font-semibold text-white group-hover:text-[#00FF41] transition-colors duration-300 text-center">
+            {tech.name}
+          </h3>
+          
+          <!-- Glow effect on hover -->
+          <div 
+            class="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-xl"
+            style={`background-color: ${tech.color};`}
+          ></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Code Block Showcase -->
+    <div class="max-w-4xl mx-auto bg-[#16161D] border border-[#4A148C] rounded-lg overflow-hidden shadow-2xl">
+      <!-- Terminal Header -->
+      <div class="bg-[#1A1A24] px-4 py-3 flex items-center gap-2 border-b border-[#4A148C]">
+        <div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+        <div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+        <span class="ml-4 text-gray-400 text-sm font-mono">stack.ts</span>
+      </div>
+
+      <!-- Code Content -->
+      <div class="p-6 font-mono text-sm overflow-x-auto">
+        <pre class="text-gray-300"><code><span class="text-[#C678DD]">const</span> <span class="text-[#E06C75]">techStack</span> <span class="text-white">=</span> <span class="text-white">{'{'}</span>
+  <span class="text-[#00FF41]">frontend</span><span class="text-white">:</span> <span class="text-white">[</span><span class="text-[#98C379]">'Astro'</span><span class="text-white">,</span> <span class="text-[#98C379]">'Tailwind'</span><span class="text-white">],</span>
+  <span class="text-[#00FF41]">backend</span><span class="text-white">:</span> <span class="text-white">[</span><span class="text-[#98C379]">'Node.js'</span><span class="text-white">,</span> <span class="text-[#98C379]">'TypeScript'</span><span class="text-white">],</span>
+  <span class="text-[#00FF41]">database</span><span class="text-white">:</span> <span class="text-white">[</span><span class="text-[#98C379]">'PostgreSQL'</span><span class="text-white">,</span> <span class="text-[#98C379]">'Supabase'</span><span class="text-white">],</span>
+  <span class="text-[#00FF41]">deploy</span><span class="text-white">:</span> <span class="text-white">[</span><span class="text-[#98C379]">'Railway'</span><span class="text-white">],</span>
+  <span class="text-[#00FF41]">apps</span><span class="text-white">:</span> <span class="text-white">[</span><span class="text-[#98C379]">'Web'</span><span class="text-white">,</span> <span class="text-[#98C379]">'Responsive'</span><span class="text-white">,</span> <span class="text-[#98C379]">'PWA'</span><span class="text-white">,</span> <span class="text-[#98C379]">'Dashboards'</span><span class="text-white">,</span> <span class="text-[#98C379]">'SaaS'</span><span class="text-white">]</span>
+<span class="text-white">{'}'}</span><span class="text-white">;</span>
+
+<span class="text-[#C678DD]">export</span> <span class="text-[#C678DD]">default</span> <span class="text-[#E06C75]">techStack</span><span class="text-white">;</span></code></pre>
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-16">
+      <p class="text-gray-300 text-lg mb-2">
+        ¿Necesitas una tecnologia especifica?
+      </p>
+      <p class="text-[#00FF41] font-semibold">
+        Puedo adaptarme al stack que ya usa tu proyecto.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
